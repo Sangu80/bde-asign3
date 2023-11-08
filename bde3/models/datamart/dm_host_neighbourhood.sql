@@ -39,8 +39,8 @@ SELECT
 FROM 
     dm_host_neighbourhood
 GROUP BY 
-    host_neighbourhood_lga,
+    lga_name,  -- Updated to use the original column name
     TO_CHAR(scraped_date, 'MM/YYYY')
 ORDER BY 
-    host_neighbourhood_lga,
+    lga_name,  -- Updated to use the original column name
     TO_CHAR(scraped_date, 'MM/YYYY');

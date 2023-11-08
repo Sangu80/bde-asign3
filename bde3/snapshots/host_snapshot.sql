@@ -10,5 +10,3 @@
     }}
 
 select id,host_id,host_name,host_since,host_is_superhost,host_neighbourhood from {{ source('raw', 'house') }}
-
-{% endsnapshot %}
